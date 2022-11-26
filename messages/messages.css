@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+html,
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+/* Меню */
+
+.nav_menu{
+    box-sizing: border-box;
+    position: fixed;
+    padding-top: 48px;
+    background-color: #27292d;
+    width: 120px;
+    height: 100vh;
+    text-align: center;
+}
+
+.nav_item{
+    margin-top: 69px;
+}
+
+.nav_item:first-child{
+    margin-top: 0;
+}
+
+/* Меню */
+
+
+/* Список переписок */
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.chat_list{
+    position: fixed;
+    padding: 50px 10px 0 40px;
+    margin-left: 120px;
+    background-color: #181a1c; 
+    width: 620px;
+    height: 100%;
+}
+
+.search {
+    box-sizing: border-box;
+    padding: 6px 5px 7px 25px;
+    height: 72px;
+    margin-top: 5px;
+    border-radius: 30px;
+    border: 1px solid #ffffff;
+}
+
+
+.title{
+   color:  #D0CACA;
+   font-size: 45px;
+   font-weight: 500; 
+}
+
+#search_img{
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+}
+
+#search_input{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    color: rgba(208, 202, 202, 0.75);
+    width: 460px;
+    background-color: rgba(0,0,0,0);
+    margin-left: 20px;
+    border: none;
+}
+
+.chats{
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* overflow-y: scroll; */
+    overflow: overlay;
+}
+
+.chat_item{
+    margin-top: 49px;
+    display: flex;
+    align-items: center;
+}
+
+.chat_item:hover{
+    border-radius:30px;
+    background: #27292D;
+    transition: .2s;
+}
+.chat_item:first-child{
+    margin-top: 0;
+}
+
+.chat_text{
+    margin-left: 20px;
+    font-family: 'Raleway';
+    color: #AEBBD6;
+}
+
+.chat_title{
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.chat_message{
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/* Список переписок */
+
+/* Переписка */
+
+.personal_chat{
+    background-color:#161819;
+    margin-left: 790px;
+    position: relative;
+    height: 100%;
+}
+
+.header{
+    background-color: #181a1c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 15px;
+}
+
+.header_left{
+    display: flex;
+    align-items: center;
+}
+
+.header_name{
+    margin-left: 25px;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.header_right{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 55px;
+    color: #FFFFFF;
+}
+
+
+/* внутренний чат */
+
+.messages{
+    padding: 15px 35px 20px 30px;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.messages_right{
+    margin-top: 15px;
+    display: inline-block;
+    padding: 15px 15px;
+    background: #1B3D80;
+    border-radius: 30px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    justify-content: end;
+    text-align: left;
+    max-width: 80%;
+}
+
+.messages_left{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 15px 15px;
+    background: #27292D;
+    border-radius: 30px;
+    font-family: 'Raleway'; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    justify-content: start;
+    align-items: top;
+    color: #FFFFFF;
+    max-width: 80%;
+}
+
+.message_flex{
+    display: flex;
+    
+}
+
+.message_block_right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.message_block_left{
+    display: flex;
+}
+
+.message_block_right:first-child{
+    align-items: end;
+}
+
+.message_block_left:last-child{
+    align-items: end;
+}
+
+.message_right_time{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+
+.message_left_time{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+
+.message_avatar{
+    width: 55px;
+    height: 55px;
+}
+
+.message_left_text{
+    margin-left: 10px;
+}
+
+.message_right_text{
+    margin-right: 10px;
+}
+
+
+/* Отправка */
+
+.sending{
+    width: 95%;
+    height: 68px;
+    background: #27292D;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 15px;
+    margin: 0 30px 0 30px;
+}
+
+#message_attach{
+    margin-left: 10px;
+    width: 31px;
+    height: 31px;
+}
+
+#message_text{
+    margin-left: 10px;
+    background-color: #27292D;
+    border:none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    color: #6780B2;
+    width: 100%;
+}
+
+#message_send{
+    margin-right: 10px;
+    height: 31px;
+    width: 31px;
+}
+
+
+
+
+/* Переписка */
+

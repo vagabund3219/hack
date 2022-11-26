@@ -1,0 +1,31 @@
+.chat_item{
+    margin-top: 49px;
+    display: flex;
+    align-items: center;
+}
+
+.chat_item:hover{
+    border-radius:30px;
+    background: #27292D;
+    transition: .2s;
+}
+.chat_item:first-child{
+    margin-top: 0;
+}
+
+.chat_text{
+    margin-left: 20px;
+    font-family: 'Raleway';
+    color: #AEBBD6;
+}
+
+.chat_title{
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.chat_message{
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 20px;
+}

@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+html,
+body {
+  /* height: 100vh; */
+  /* box-sizing: border-box; */
+
+  overflow: hidden;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Левая сторона */
+.auth{
+    /* padding: 140px 102px 137px 100px; */
+    padding: 30px 102px 137px 20px;
+    background-color: #27292d;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.auth_left_side{
+    width: 45%;
+}
+
+.auth_title{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    color: #FFFFFF;
+}
+
+.auth_subtitle{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+    width: 60%;
+}
+
+.auth_footer{
+    height: 78%;
+}
+
+.auth_img_footer{
+    margin-top: 60px;
+    width: 90%;
+    height: 90%;
+}
+
+/* Левая сторона */
+
+
+/* Правая сторона */
+.auth_right_side{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 45%;
+}
+
+.auth_logo{
+    width: 340px;
+    height: 280px;
+}
+
+
+.auth_form{
+    margin-top: 46px;
+    width: 100%;
+}
+
+.auth_block{
+    background: rgba(24, 26, 28, 0.8);
+    height: 69px;
+    /* width: 740px; */
+    /* width: 100%; */
+    padding: 7px 15px;
+    margin-top: 44px;
+    border-radius: 15px;
+    display: flex;
+}
+
+
+/* Инпуты */
+.auth_block input{
+    margin-left: 15px;
+    width: 88%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;
+    
+}
+
+.auth_block_block{
+    width: 100%;
+    margin: auto;
+}
+
+.auth_img{
+    width: 31px;
+    height: 41px;
+}
+
+.auth_adress{
+    background: rgba(0,0,0,0);
+    border: none;
+}
+
+.auth_username{
+    background: rgba(0,0,0,0);
+    border: none;
+}
+
+/* Кнопки */
+
+.auth_buttons{
+    margin-top: 59px;
+    display: flex;
+    justify-content: space-between;
+    /* width: 100% */
+}
+
+.auth_button{
+    /* width: 100%; */
+    width: 45%;
+    height: 70px;
+    border: none;
+    background: rgba(24, 26, 28, 0.8);
+    border-radius: 15px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+
+
+

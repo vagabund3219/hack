@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./allusers.css">
+    <title>allusers</title>
+</head>
+<body>
+        
+        <!-- Меню -->
+        <nav class="nav_menu">
+            <ul class="nav_list">
+                <li class="nav_item"><a href="#"><img src="../messages/images/logo.png" alt="logo"></a></li>
+                <li class="nav_item" id="settings2"><a href="#"><img src="../messages/images/chat.png" alt="chat"></a></li>
+                <li class="nav_item" id="settings1"><a href="#"><img src="../messages/images/person.png" alt="profile"></a></li>
+                <li class="nav_item" id="settings"><a href="#"><img src="../messages/images/settings.png" alt="settings"></a></li>
+            </ul>
+        </nav>
+         <!-- Меню -->
+
+
+        <section class="profiles">
+            <!-- Профиль -->
+                <div class="profile_upper">
+                    <div class="profile_name">Гений Евгеньевич Смирнов</div>
+                    <img src="../messages/images/avatar.png" alt="avatar">
+                </div>
+                <div class="profile_search">
+                    <div class="profile_search_text">Все пользователи</div>
+                    <div class="profile_search_block">
+                        <img src="images/search.png" alt="search" class="profile_search_img">
+                        <input type="text" class="profile_search_input" placeholder="Поиск пользователя...">
+                    </div>
+                </div>
+                <div class="profile_container">
+                    <div class="profile_card">
+                        <img src="images/profile.png" alt="profile_avatar" class="profile_avatar">
+                        <div class="profile_name">Светлана Ромашкова</div>
+                        <div class='profile_address'>55a9a56a19dc855cea91ba4a064..</div>
+                        <button class="profile_message">Сообщение</button>
+                    </div>
+                    <div class="profile_card">
+                        <img src="images/profile.png" alt="profile_avatar" class="profile_avatar">
+                        <div class="profile_name">Светлана Ромашкова</div>
+                        <div class='profile_address'>55a9a56a19dc855cea91ba4a064..</div>
+                        <button class="profile_message">Сообщение</button>
+                    </div>
+                    <div class="profile_card">
+                        <img src="images/profile.png" alt="profile_avatar" class="profile_avatar">
+                        <div class="profile_name">Светлана Ромашкова</div>
+                        <div class='profile_address'>55a9a56a19dc855cea91ba4a064..</div>
+                        <button class="profile_message">Сообщение</button>
+                    </div>
+                    <div class="profile_card">
+                        <img src="images/profile.png" alt="profile_avatar" class="profile_avatar">
+                        <div class="profile_name">Светлана Ромашкова</div>
+                        <div class='profile_address'>55a9a56a19dc855cea91ba4a064..</div>
+                        <button class="profile_message">Сообщение</button>
+                    </div>
+                    <div class="profile_card">
+                        <img src="images/profile.png" alt="profile_avatar" class="profile_avatar">
+                        <div class="profile_name">Светлана Ромашкова</div>
+                        <div class='profile_address'>55a9a56a19dc855cea91ba4a064..</div>
+                        <button class="profile_message">Сообщение</button>
+                    </div>
+                    <div class="profile_card">
+                        <img src="images/profile.png" alt="profile_avatar" class="profile_avatar">
+                        <div class="profile_name">Светлана Ромашкова</div>
+                        <div class='profile_address'>55a9a56a19dc855cea91ba4a064..</div>
+                        <button class="profile_message">Сообщение</button>
+                    </div>
+                    <div class="profile_card">
+                        <img src="images/profile.png" alt="profile_avatar" class="profile_avatar">
+                        <div class="profile_name">Светлана Ромашкова</div>
+                        <div class='profile_address'>55a9a56a19dc855cea91ba4a064..</div>
+                        <button class="profile_message">Сообщение</button>
+                    </div>
+                    <div class="profile_card">
+                        <img src="images/profile.png" alt="profile_avatar" class="profile_avatar">
+                        <div class="profile_name">Светлана Ромашкова</div>
+                        <div class='profile_address'>55a9a56a19dc855cea91ba4a064..</div>
+                        <button class="profile_message">Сообщение</button>
+                    </div>
+                    <div class="profile_card">
+                        <img src="images/profile.png" alt="profile_avatar" class="profile_avatar">
+                        <div class="profile_name">Светлана Ромашкова</div>
+                        <div class='profile_address'>55a9a56a19dc855cea91ba4a064..</div>
+                        <button class="profile_message">Сообщение</button>
+                    </div>
+                    <div class="profile_card">
+                        <img src="images/profile.png" alt="profile_avatar" class="profile_avatar">
+                        <div class="profile_name">Светлана Ромашкова</div>
+                        <div class='profile_address'>55a9a56a19dc855cea91ba4a064..</div>
+                        <button class="profile_message">Сообщение</button>
+                    </div>
+                </div>
+            <!-- Профиль -->
+
+
+            <!-- Поиск -->
+            <!-- Поиск -->
+
+
+            <!-- Список пользователей -->
+            <!-- Список пользователей -->
+        </section>
+        <audio id="audio" src="Смешарики - От винта (+36db).mp3"></audio>
+        <script>
+            const btn = document.getElementById('settings');
+            const btn1 = document.getElementById('settings1');
+            const btn2 = document.getElementById('settings2');
+            const audio = document.getElementById('audio');
+            const find = document.querySelector('.profile_search_block');
+            console.log(find);
+            let a = 0;
+            btn.addEventListener('click', ()=>{
+                a++;
+                if (a>2){
+                    audio.volume = 0.18
+                    audio.play()
+                    rotating(find)
+                }
+            })
+
+            function rotating(elem){
+                console.log('1')
+                elem.style.rotate = '90deg'
+                elem.style.rotate = '180deg'
+                elem.style.rotate = '270deg'
+                elem.style.rotate = '90deg'
+                elem.style.rotate = '180deg'
+                elem.style.rotate = '90deg'
+
+                setInterval(()=>{
+                    elem.classList.add('ddd');
+                }, 8000)
+                setInterval(()=>{
+                    elem.classList.remove('ddd');
+                    elem.classList.add('dddd');
+                }, 29000)
+
+
+            }
+
+            btn1.addEventListener('click', ()=>{
+                audio.pause()
+            })
+            btn2.addEventListener('click', ()=>{
+                audio.volume = 0.2
+            })
+            
+            
+
+        </script>
+</body>
+</html>
